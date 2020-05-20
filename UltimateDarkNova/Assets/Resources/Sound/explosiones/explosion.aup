@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="explosion_data" version="1.3.0" audacityversion="2.3.3" sel0="0.0000000000" sel1="2.0137641723" vpos="0" h="0.0000000000" zoom="95.8400393419" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Software" value="Lavf57.56.101"/>
+		<tag name="major_brand" value="dash"/>
+		<tag name="minor_version" value="0"/>
+		<tag name="compatible_brands" value="iso6mp41"/>
+	</tags>
+	<wavetrack name="8bit Explosion Sound Effects Retro Games Soundholder" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="1" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="398483">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808b59.au" len="174257" min="-0.924753" max="0.935265" rms="0.153242"/>
+				</waveblock>
+				<waveblock start="174257">
+					<simpleblockfile filename="e0808dbb.au" len="135418" min="-0.318271" max="0.315079" rms="0.064277"/>
+				</waveblock>
+				<waveblock start="309675">
+					<simpleblockfile filename="e080881e.au" len="88808" min="-0.990084" max="0.851969" rms="0.179456"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="8bit Explosion Sound Effects Retro Games Soundholder" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="1" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="398483">
+				<waveblock start="0">
+					<simpleblockfile filename="e08082af.au" len="174257" min="-0.98989" max="0.989886" rms="0.180049"/>
+				</waveblock>
+				<waveblock start="174257">
+					<simpleblockfile filename="e0808f91.au" len="135418" min="-0.318271" max="0.315149" rms="0.064277"/>
+				</waveblock>
+				<waveblock start="309675">
+					<simpleblockfile filename="e0808250.au" len="88808" min="-0.990084" max="0.851969" rms="0.179456"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="8bit Explosion Sound Effects Retro Games Soundholder" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="88807">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808c3d.au" len="88807" min="-0.990084" max="0.851969" rms="0.196227"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="8bit Explosion Sound Effects Retro Games Soundholder" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="88807">
+				<waveblock start="0">
+					<simpleblockfile filename="e08087cd.au" len="88807" min="-0.990084" max="0.851969" rms="0.196227"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
