@@ -8,6 +8,7 @@ TagManager:
   - navelvl2
   - disparo_naveP
   - disparo_naveE
+  - naveF
   layers:
   - Default
   - TransparentFX
