@@ -201,7 +201,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 75b054b49d0e5d24d9d4e1abcb597f07, type: 3}
+  m_Sprite: {fileID: 21300000, guid: de555b2ad06f3aa47bf2c1e9ae502d20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -718,6 +718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   explosion: {fileID: 0}
+  seconds: 0
 --- !u!1 &1713385549 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4117144217418866524, guid: 2827d3d87b0b7fa4286ec50860cef433,
@@ -738,6 +739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   explosion: {fileID: 0}
+  seconds: 0
 --- !u!1 &2055960036
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,6 +817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   explosion: {fileID: 0}
+  seconds: 0
 --- !u!1001 &633520788209400098
 PrefabInstance:
   m_ObjectHideFlags: 0
