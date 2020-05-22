@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class Generador : MonoBehaviour
 {
     public GameObject navelvl1;
-
     float sactuales;
     public float seconds;
 
@@ -22,9 +21,14 @@ public class Generador : MonoBehaviour
 
         if (sactuales <= 0.0f)
         {
-            Instantiate(navelvl1, transform.position = new Vector2(0.0f, 8.0f), transform.rotation = Quaternion.Euler(180, 0, 0));
+            Instantiate(navelvl1, transform.position = new Vector2(RandomNumber(-6,6), 8.0f), transform.rotation = Quaternion.Euler(180, 0, 0));
 
             sactuales = seconds;
         }
+    }
+    public int RandomNumber(int min, int max)
+    {
+        System.Random random = new System.Random();
+        return random.Next(min, max);
     }
 }
