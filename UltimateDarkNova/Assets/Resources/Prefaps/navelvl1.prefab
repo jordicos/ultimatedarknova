@@ -134,8 +134,8 @@ MonoBehaviour:
   disparoPrefab: {fileID: 1889939359363448049, guid: 4b8cc95393247ca4d9c02634b062968a,
     type: 3}
   player: {fileID: 633520788637456000}
-  seconds: 0.5
-  speed: -5
+  seconds: 2.5
+  speed: -2
 --- !u!50 &9000268671545117741
 Rigidbody2D:
   serializedVersion: 4

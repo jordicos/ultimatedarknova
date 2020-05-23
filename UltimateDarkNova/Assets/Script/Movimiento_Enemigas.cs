@@ -26,10 +26,11 @@ public class Movimiento_Enemigas : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        sactuales -= Time.deltaTime;
         if (sactuales <= 0.0f)
         {
             disparar();
-
             sactuales = seconds;
         }
     }

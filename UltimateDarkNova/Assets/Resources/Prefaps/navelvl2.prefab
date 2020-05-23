@@ -158,4 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c760bb5ef1e0f4496f665aa1da013a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -3
+  disparoPrefab: {fileID: 1889939359363448049, guid: 4b8cc95393247ca4d9c02634b062968a,
+    type: 3}
+  player: {fileID: 1196041966060900871}
+  seconds: 1
+  speed: -1.5

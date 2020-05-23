@@ -10,6 +10,7 @@ TagManager:
   - disparo_naveE
   - naveF
   - naveP
+  - vida
   layers:
   - Default
   - TransparentFX
