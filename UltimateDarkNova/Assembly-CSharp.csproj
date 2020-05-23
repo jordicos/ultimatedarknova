@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Character_controller.cs" />
     <Compile Include="Assets\Script\Disparo.cs" />
+    <Compile Include="Assets\Script\Disparo_navesE.cs" />
     <Compile Include="Assets\Script\Generador.cs" />
     <Compile Include="Assets\Script\Movimiento_Enemigas.cs" />
     <Reference Include="Unity.Timeline.Editor">

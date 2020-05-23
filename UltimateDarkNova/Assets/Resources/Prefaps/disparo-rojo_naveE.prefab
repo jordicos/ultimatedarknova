@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8104051053154787637}
   - component: {fileID: 1590849461047628499}
   - component: {fileID: 2792444725021718337}
-  - component: {fileID: -7064731853915328592}
+  - component: {fileID: -7667615986247414294}
   m_Layer: 0
   m_Name: disparo-rojo_naveE
   m_TagString: disparo_naveE
@@ -121,7 +121,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!114 &-7064731853915328592
+--- !u!114 &-7667615986247414294
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,6 +130,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1889939359363448049}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c586ebe20a2fb804bae0055a9d5847d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 467164daf646d3144aebeabf0e87daa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 50
+  seconds: 0.5
