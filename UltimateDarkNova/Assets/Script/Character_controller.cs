@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class Character_controller : MonoBehaviour
 {
+
+    private GameObject health;
     public GameObject disparoPrefab;
+    public GameObject explosion;
     public Transform player;
     public float force;
+
+    private int vidas;
+
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = GameObject.Find("vida");
+
+        vidas = 3;
     }
 
     // Update is called once per frame
@@ -29,5 +38,25 @@ public class Character_controller : MonoBehaviour
     {
         GameObject b = Instantiate(disparoPrefab) as GameObject;
         b.transform.position = player.transform.position;
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        GameObject e = Instantiate(explosion) as GameObject;
+
+        if(other.gameObject.tag == "disparo_naveE" || other.gameObject.tag == "navelvl1" || other.gameObject.tag == "navelvl2")
+        {
+            vidas--;
+            Debug.Log("Ahora hay " + vidas + " vidas");
+            health.SendMessage("Damage", 1);
+            Destroy(other.gameObject);
+            if (vidas == 0)
+            {
+                e.transform.position = this.transform.position;
+                
+                Destroy(this.gameObject);
+                Destroy(e.gameObject, 0.15f);
+            }
+        }
     }
 }

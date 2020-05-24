@@ -69,6 +69,7 @@
     <Compile Include="Assets\Script\Generador.cs" />
     <Compile Include="Assets\Script\Movimiento_Enemigas.cs" />
     <Compile Include="Assets\Script\Movimiento_daño.cs" />
+    <Compile Include="Assets\Script\Vida.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/jordi/Desktop/ultimatedarknova/UltimateDarkNova/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

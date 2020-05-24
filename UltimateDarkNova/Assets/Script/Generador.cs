@@ -8,6 +8,8 @@ public class Generador : MonoBehaviour
     float sactuales;
     public float seconds;
 
+    int total = 50;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +19,11 @@ public class Generador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sactuales -= Time.deltaTime;
+            sactuales -= Time.deltaTime;
 
         if (sactuales <= 0.0f)
         {
-            Instantiate(navelvl1, transform.position = new Vector2(RandomNumber(-6,6), 8.0f), transform.rotation = Quaternion.Euler(180, 0, 0));
+            Instantiate(navelvl1, transform.position = new Vector2(RandomNumber(-6, 6), 8.0f), transform.rotation = Quaternion.Euler(180, 0, 0));
 
             sactuales = seconds;
         }

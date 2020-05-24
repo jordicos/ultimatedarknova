@@ -8,8 +8,6 @@ public class Disparo_navesE : MonoBehaviour
     private Rigidbody2D rb;
     public GameObject explosion;
 
-    private int vidas = 3;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -27,25 +25,11 @@ public class Disparo_navesE : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        GameObject e = Instantiate(explosion) as GameObject;
+
         if (other.gameObject.tag == "disparo_naveP")
         {
-            Destroy(other.gameObject);
-            Destroy(this.gameObject);
-        } else if (other.gameObject.tag == "naveP")
-        {
-            vidas--;
-            if (vidas <= 0)
-            {
-                GameObject e = Instantiate(explosion) as GameObject;
-                e.transform.position = transform.position;
-                Destroy(other.gameObject);
-                Destroy(this.gameObject);
-                Destroy(e.gameObject, 0.15f);
-            } 
-            else
-            {
-
-            }
-        }
+            Debug.Log("alcanzado");
+        } 
     }
 }

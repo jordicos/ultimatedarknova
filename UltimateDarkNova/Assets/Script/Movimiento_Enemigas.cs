@@ -5,6 +5,7 @@ using UnityEngine;
 public class Movimiento_Enemigas : MonoBehaviour
 {
     public GameObject disparoPrefab;
+    public GameObject explosion;
     public Transform player;
     public float seconds;
     private float sactuales;
@@ -38,5 +39,16 @@ public class Movimiento_Enemigas : MonoBehaviour
     {
         GameObject b = Instantiate(disparoPrefab) as GameObject;
         b.transform.position = player.transform.position;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "naveP")
+        {
+            GameObject e = Instantiate(explosion) as GameObject;
+            e.transform.position = transform.position;
+            Destroy(this.gameObject);
+            Destroy(e.gameObject, 0.15f);
+        }
     }
 }

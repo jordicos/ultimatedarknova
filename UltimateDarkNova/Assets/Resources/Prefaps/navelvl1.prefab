@@ -94,7 +94,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -132,6 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disparoPrefab: {fileID: 1889939359363448049, guid: 4b8cc95393247ca4d9c02634b062968a,
+    type: 3}
+  explosion: {fileID: 7490493423223255701, guid: 18949e37f62dbf04bab96a3af415cc3b,
     type: 3}
   player: {fileID: 633520788637456000}
   seconds: 2.5

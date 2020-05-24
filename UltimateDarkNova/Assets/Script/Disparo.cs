@@ -8,9 +8,6 @@ public class Disparo : MonoBehaviour
     public float speed = 50.0f;
     private Rigidbody2D rb;
     public GameObject explosion;
-    /*
-    float sactuales;
-    public float seconds;*/
 
     // Start is called before the first frame update
     void Start()
