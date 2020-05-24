@@ -6,7 +6,6 @@ public class Disparo_navesE : MonoBehaviour
 {
     public float speed = 50.0f;
     private Rigidbody2D rb;
-    public GameObject explosion;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +24,6 @@ public class Disparo_navesE : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        GameObject e = Instantiate(explosion) as GameObject;
 
         if (other.gameObject.tag == "disparo_naveP")
         {

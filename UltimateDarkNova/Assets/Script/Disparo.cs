@@ -28,13 +28,14 @@ public class Disparo : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "navelvl1" || other.gameObject.tag == "navelvl2")
+        if (other.gameObject.tag == "navelvl1")
         {
             GameObject e = Instantiate(explosion) as GameObject;
             e.transform.position = transform.position;
             Destroy(other.gameObject);
             Destroy(this.gameObject);
             Destroy(e.gameObject, 0.15f);
+            Score.scoreAmount += 100;
         }
     }
 }

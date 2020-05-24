@@ -66,9 +66,16 @@
     <Compile Include="Assets\Script\Character_controller.cs" />
     <Compile Include="Assets\Script\Disparo.cs" />
     <Compile Include="Assets\Script\Disparo_navesE.cs" />
+    <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Generador.cs" />
+    <Compile Include="Assets\Script\Generador_background.cs" />
+    <Compile Include="Assets\Script\Generador_naveFinal.cs" />
+    <Compile Include="Assets\Script\Level.cs" />
+    <Compile Include="Assets\Script\Mov_final.cs" />
     <Compile Include="Assets\Script\Movimiento_Enemigas.cs" />
+    <Compile Include="Assets\Script\Movimiento_background.cs" />
     <Compile Include="Assets\Script\Movimiento_daño.cs" />
+    <Compile Include="Assets\Script\Score.cs" />
     <Compile Include="Assets\Script\Vida.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/jordi/Desktop/ultimatedarknova/UltimateDarkNova/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

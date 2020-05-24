@@ -12,11 +12,14 @@ public class Movimiento_Enemigas : MonoBehaviour
     public float speed;
     private Vector2 screenBounds;
 
+    private int damagelvl2;
+
     // Start is called before the first frame update
     void Start()
     {
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         sactuales = seconds;
+        damagelvl2 = 0;
     }
 
     // Update is called once per frame
@@ -49,6 +52,20 @@ public class Movimiento_Enemigas : MonoBehaviour
             e.transform.position = transform.position;
             Destroy(this.gameObject);
             Destroy(e.gameObject, 0.15f);
+        } else if(other.gameObject.tag == "disparo_naveP" && this.gameObject.tag == "navelvl2")
+        {
+            Destroy(other.gameObject);
+            damagelvl2++;
+            Score.scoreAmount += 100;
+            if(damagelvl2 == 2)
+            {
+                GameObject e = Instantiate(explosion) as GameObject;
+                e.transform.position = transform.position;
+                
+                Destroy(this.gameObject);
+                Destroy(e.gameObject, 0.15f);
+                Score.scoreAmount += 100;
+            }
         }
     }
 }
