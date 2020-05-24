@@ -8,6 +8,8 @@ public class Character_controller : MonoBehaviour
     private GameObject health;
     public GameObject disparoPrefab;
     public GameObject explosion;
+    public GameObject gameOver;
+
     public Transform player;
     public float force;
 
@@ -20,6 +22,8 @@ public class Character_controller : MonoBehaviour
     void Start()
     {
         health = GameObject.Find("vida");
+
+        gameOver.SetActive(false);
 
         vidas = 3;
     }
@@ -56,6 +60,8 @@ public class Character_controller : MonoBehaviour
                 
                 Destroy(this.gameObject);
                 Destroy(e.gameObject, 0.15f);
+                gameOver.SetActive(true);
+                Time.timeScale = 0;
             }
         }
     }

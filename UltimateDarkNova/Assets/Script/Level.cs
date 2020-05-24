@@ -6,14 +6,13 @@ using UnityEngine.UI;
 public class Level : MonoBehaviour
 {
 
-    public static int levelNum;
+    public int levelNum;
     private Text levelText;
 
     // Start is called before the first frame update
     void Start()
     {
         levelText = GetComponent<Text>();
-        levelNum = 1;
     }
 
     // Update is called once per frame

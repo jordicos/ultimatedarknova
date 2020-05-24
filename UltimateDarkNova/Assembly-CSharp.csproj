@@ -71,6 +71,7 @@
     <Compile Include="Assets\Script\Generador_background.cs" />
     <Compile Include="Assets\Script\Generador_naveFinal.cs" />
     <Compile Include="Assets\Script\Level.cs" />
+    <Compile Include="Assets\Script\LevelManage.cs" />
     <Compile Include="Assets\Script\Mov_final.cs" />
     <Compile Include="Assets\Script\Movimiento_Enemigas.cs" />
     <Compile Include="Assets\Script\Movimiento_background.cs" />

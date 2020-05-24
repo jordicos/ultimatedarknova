@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.Assertions.Must;
+using UnityEngine.SceneManagement;
 
 public class Generador : MonoBehaviour
 {
@@ -39,7 +40,7 @@ public class Generador : MonoBehaviour
             total--;
             if(total == 0)
             {
-                NivelAcabado();
+                Nivel1Acabado();
                 RemoveAfterSeconds(3);
             }
         }
@@ -50,10 +51,11 @@ public class Generador : MonoBehaviour
         return random.Next(min, max);
     }
 
-    private void NivelAcabado()
+    private void Nivel1Acabado()
     {
-        Level.levelNum += 1;
         levelCompletado.SetActive(true);
+        Time.timeScale = 0;
+        SceneManager.LoadScene(1);
     }
 
     IEnumerator RemoveAfterSeconds(int seconds)

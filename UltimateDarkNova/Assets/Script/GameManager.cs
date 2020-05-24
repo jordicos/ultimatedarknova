@@ -44,7 +44,6 @@ public class GameManager : MonoBehaviour
         float activo = 5;
         activo -= Time.deltaTime;
         levelCompletado.SetActive(true);
-        Level.levelNum += 1;
 
         if (activo == 0.0f)
         {
