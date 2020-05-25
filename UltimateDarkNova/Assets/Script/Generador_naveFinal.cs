@@ -20,11 +20,10 @@ public class Generador_naveFinal : MonoBehaviour
     {
         sactuales -= Time.deltaTime;
 
-        if (sactuales <= 0.0f)
+        if (sactuales == 0.0f)
         {
             Instantiate(nave, transform.position = new Vector2(0, 8.0f), transform.rotation = Quaternion.Euler(180, 0, 0));
 
-            sactuales = seconds;
         }
     }
 }
