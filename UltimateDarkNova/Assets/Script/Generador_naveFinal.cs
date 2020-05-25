@@ -23,7 +23,7 @@ public class Generador_naveFinal : MonoBehaviour
         if (sactuales == 0.0f)
         {
             Instantiate(nave, transform.position = new Vector2(0, 8.0f), transform.rotation = Quaternion.Euler(180, 0, 0));
-
+            //https://www.youtube.com/watch?v=006390y960g
         }
     }
 }
