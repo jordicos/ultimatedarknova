@@ -13,8 +13,9 @@ public class Disparo : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(0, speed);
+        rb.velocity = new Vector2(0, transform.position.y + speed);
 
+        //transform.position.y+speed
     }
 
     // Update is called once per frame
@@ -30,8 +31,7 @@ public class Disparo : MonoBehaviour
     {
         if (other.gameObject.tag == "navelvl1")
         {
-            GameObject e = Instantiate(explosion) as GameObject;
-            e.transform.position = transform.position;
+            GameObject e = Instantiate(explosion, transform.position, transform.rotation);
             Destroy(other.gameObject);
             Destroy(this.gameObject);
             Destroy(e.gameObject, 0.15f);

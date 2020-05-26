@@ -24,6 +24,7 @@ public class Character_controller : MonoBehaviour
         health = GameObject.Find("vida");
 
         gameOver.SetActive(false);
+        Time.timeScale = 1;
 
         vidas = 3;
     }
@@ -40,13 +41,11 @@ public class Character_controller : MonoBehaviour
     }
     public void disparar()
     {
-        GameObject b = Instantiate(disparoPrefab) as GameObject;
-        b.transform.position = player.transform.position;
+        Instantiate(disparoPrefab, transform.position, transform.rotation);
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        GameObject e = Instantiate(explosion) as GameObject;
 
         if(other.gameObject.tag == "disparo_naveE" || other.gameObject.tag == "navelvl1" || other.gameObject.tag == "navelvl2")
         {
@@ -56,10 +55,10 @@ public class Character_controller : MonoBehaviour
             Destroy(other.gameObject);
             if (vidas == 0)
             {
-                e.transform.position = this.transform.position;
-                
+
+                Instantiate(explosion, transform.position, transform.rotation);
                 Destroy(this.gameObject);
-                Destroy(e.gameObject, 0.15f);
+                Destroy(explosion, 0.15f);
                 gameOver.SetActive(true);
                 Time.timeScale = 0;
             }

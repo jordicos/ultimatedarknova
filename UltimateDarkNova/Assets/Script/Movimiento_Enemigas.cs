@@ -6,18 +6,16 @@ public class Movimiento_Enemigas : MonoBehaviour
 {
     public GameObject disparoPrefab;
     public GameObject explosion;
-    public Transform player;
+
     public float seconds;
     private float sactuales;
     public float speed;
-    private Vector2 screenBounds;
 
     private int damagelvl2;
 
     // Start is called before the first frame update
     void Start()
     {
-        screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         sactuales = seconds;
         damagelvl2 = 0;
     }
@@ -40,16 +38,14 @@ public class Movimiento_Enemigas : MonoBehaviour
     }
     public void disparar()
     {
-        GameObject b = Instantiate(disparoPrefab) as GameObject;
-        b.transform.position = player.transform.position;
+        Instantiate(disparoPrefab, transform.position, transform.rotation);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "naveP")
         {
-            GameObject e = Instantiate(explosion) as GameObject;
-            e.transform.position = transform.position;
+            GameObject e = Instantiate(explosion, transform.position, transform.rotation);
             Destroy(this.gameObject);
             Destroy(e.gameObject, 0.15f);
         } else if(other.gameObject.tag == "disparo_naveP" && this.gameObject.tag == "navelvl2")
@@ -59,9 +55,7 @@ public class Movimiento_Enemigas : MonoBehaviour
             Score.scoreAmount += 100;
             if(damagelvl2 == 2)
             {
-                GameObject e = Instantiate(explosion) as GameObject;
-                e.transform.position = transform.position;
-                
+                GameObject e = Instantiate(explosion, transform.position, transform.rotation);
                 Destroy(this.gameObject);
                 Destroy(e.gameObject, 0.15f);
                 Score.scoreAmount += 100;

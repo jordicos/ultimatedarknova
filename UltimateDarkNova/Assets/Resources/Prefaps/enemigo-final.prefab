@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 393937269276133155}
   - component: {fileID: 393937269276133153}
   - component: {fileID: 3733337775227784878}
-  - component: {fileID: -1443393542421978268}
+  - component: {fileID: 7774608138930223112}
   m_Layer: 0
   m_Name: enemigo-final
   m_TagString: naveF
@@ -144,7 +144,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
---- !u!114 &-1443393542421978268
+--- !u!114 &7774608138930223112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +158,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disparoPrefab: {fileID: 4117144217418866524, guid: 2827d3d87b0b7fa4286ec50860cef433,
     type: 3}
-  explosion: {fileID: 7490493423223255701, guid: 18949e37f62dbf04bab96a3af415cc3b,
+  explosion: {fileID: 6501717753534403502, guid: 2978da50e79abeb43bbda648ee7c25a7,
     type: 3}
-  player: {fileID: 7233707011936536506, guid: 942d777122ccee84fa4da4e35f791b17, type: 3}
-  speed: -0.5
+  levelCompletado: {fileID: 2489750306229759709, guid: 61f5bd1be7ab81740bc768f8748e889d,
+    type: 3}
+  seconds: 1.5
+  speed: -1

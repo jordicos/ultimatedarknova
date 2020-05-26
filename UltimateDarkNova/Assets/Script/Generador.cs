@@ -8,10 +8,11 @@ using UnityEngine.SceneManagement;
 public class Generador : MonoBehaviour
 {
     public GameObject navelvl1;
+    
     float sactuales;
     public float seconds;
 
-    float tiempoTotal;
+    private int nextLevel;
 
     public GameObject levelCompletado;
 
@@ -23,6 +24,8 @@ public class Generador : MonoBehaviour
         sactuales = seconds;
         //tiempoTotal = 10;
         levelCompletado.SetActive(false);
+
+        nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
     // Update is called once per frame
@@ -40,7 +43,7 @@ public class Generador : MonoBehaviour
             total--;
             if(total == 0)
             {
-                Nivel1Acabado();
+                NivelAcabado();
                 RemoveAfterSeconds(3);
             }
         }
@@ -51,11 +54,11 @@ public class Generador : MonoBehaviour
         return random.Next(min, max);
     }
 
-    private void Nivel1Acabado()
+    public void NivelAcabado()
     {
         levelCompletado.SetActive(true);
         Time.timeScale = 0;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(nextLevel);
     }
 
     IEnumerator RemoveAfterSeconds(int seconds)
